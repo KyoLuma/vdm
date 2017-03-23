@@ -1,0 +1,3 @@
+vdm_homepage:
+    path:     /
+    defaults: { _controller: vdmBundle:Default:index }

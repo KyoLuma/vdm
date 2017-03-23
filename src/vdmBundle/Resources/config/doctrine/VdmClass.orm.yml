@@ -1,0 +1,22 @@
+vdmBundle\Entity\VdmClass:
+    type: entity
+    table: null
+    repositoryClass: vdmBundle\Repository\VdmClassRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        content:
+            type: text
+            column: Content
+        datePost:
+            type: date
+            column: DatePost
+        category:
+            type: string
+            length: 255
+            column: Category
+    lifecycleCallbacks: {  }

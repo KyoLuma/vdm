@@ -1,7 +1,9 @@
-vdm:
-    resource: "@vdmBundle/Resources/config/routing.yml"
-    prefix:   /
+
 
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+vdm:
+    resource: "@vdmBundle/Resources/config/routing.yml"
+    prefix:   /vdm

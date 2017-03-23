@@ -1,3 +1,7 @@
+vdm_vdmclass:
+    resource: "@vdmBundle/Resources/config/routing/vdmclass.yml"
+    prefix:   /vdmclass
+
 vdm_homepage:
     path:     /
     defaults: { _controller: vdmBundle:Default:index }

@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Vdmclasses list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Content</th>
+                <th>Datepost</th>
+                <th>Category</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for vdmClass in vdmClasses %}
+            <tr>
+                <td><a href="{{ path('vdmclass_show', { 'id': vdmClass.id }) }}">{{ vdmClass.id }}</a></td>
+                <td>{{ vdmClass.content }}</td>
+                <td>{% if vdmClass.datePost %}{{ vdmClass.datePost|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ vdmClass.category }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('vdmclass_show', { 'id': vdmClass.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('vdmclass_edit', { 'id': vdmClass.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('vdmclass_new') }}">Create a new vdmClass</a>
+        </li>
+    </ul>
+{% endblock %}

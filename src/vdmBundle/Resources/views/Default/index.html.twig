@@ -1,8 +1,22 @@
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    Hello World
-</body>
-</html>
+{% extends 'base.html.twig' %}
+    {% block body %}
+        {% block header %}
+            <nav class="navbar fixed-top navbar-light">
+                <h1>VDM au camping</h1>
+                <p class="sous_titre">(et vécues par un certain Sébastien de la WCS de Bleau...)</p>
+                <a class="navbar-brand" href="#">Problèmes de dernières minutes</a>
+                <a class="navbar-brand" href="#">Internet n'en fait qu'à sa tête</a>
+                <a class="navbar-brand" href="#">Le trajet journalier</a>
+                <a class="navbar-brand" href="#">Les p'tites bourdes</a>
+                <a class="navbar-brand" href="#">Les Inclassables</a>
+            </nav>
+        {% endblock %}
+        {% block footer %}
+            <footer>
+                <p class="sharing">Des aventures, ça se partage !</p>
+                <a href="http://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+                <a href="http://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+                <a href="http://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+            </footer>
+        {% endblock %}
+{% endblock %}

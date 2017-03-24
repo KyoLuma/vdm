@@ -1,9 +1,11 @@
 .navbar-light{
     background: rgba(139, 0, 0, .7)!important;
     border-bottom: 10px white solid;
+    position: fixed;
+    width: 100vw;
 }
 h1{
-    font-family: Time New Roman\";
+    font-family: Time New Roman;
     color: white;
     padding-left: 5%;
     font-weight: 900;
@@ -19,7 +21,7 @@ body{
     margin: 0;
 }
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height:15vh;
     width:100vw;

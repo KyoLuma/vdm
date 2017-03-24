@@ -8,7 +8,7 @@
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
     border-radius: 8px;
-    margin-top: 40px;
+    margin-top: 180px;
     height:200px;
 
 }
@@ -60,13 +60,60 @@ ul{
 
 }
 /************************************/
-                /* PAGE NEW */
+/* PAGE EDIT */
 /************************************/
+
 .form{
     width: 300px;
 }
 .submit{
     width: 300px;
+}
+.edit2 {
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+
+    height: 500px;
+    text-align: center;
+}
+.title_edit, .content_edit2, .content_edit_submit, .content_edit_3, .return_index, .content_delete {
+    margin: 50px;  border-radius: 8px;
+}
+.content_edit_submit input{
+    border-radius:8px;
+}
+.content_delete input {
+    border-radius: 8px;
+}
+/************************************/
+/*PAGE NEW */
+/************************************/
+marquee {
+    margin-top:150px ;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 81%;
+    margin-left: 9.5%;
+    color: #99de68;
+    height: 60px;
+    font-family: Josefin Sans;
+    font-size: 24pt;
+    font-style: italic;
+}.new{
+     margin-top: 40px;
+     background-color: rgba(0, 0, 0, 0.4);
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+     border-radius: 8px;
+
+     height: 400px;
+     text-align: center;
+ }
+.form_new{
+    margin-top: 50px;
+
 }
 /************************************/
             /*PAGE SHOW*/

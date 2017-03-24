@@ -11,13 +11,15 @@
             <a class="navbar-brand" href="#">Internet n'en fait qu'à sa tête</a>
             <a class="navbar-brand" href="#">Le trajet journalier</a>
             <a class="navbar-brand" href="#">Les p'tites bourdes</a>
-            <a class="navbar-brand" href="#">Les Inclassables</a>
+            <a class="navbar-brand" href="{{ path('vdmclass_new') }}">Ajoute une Galère à Sebastien</a>
+
         </nav>
     {% endblock %}
 
     <div class="container div">
 
         {% for vdmClass in vdmClasses %}
+
 
             <div class="col-xs-offset-1 col-xs-11 content">
 
@@ -49,13 +51,7 @@
                         </div>
                 {% endfor %}
 
-                        <div class="col-xs-offset-8 col-xs-4 add_vdm">
-                             <ul>
-                                 <li>
-                                    <a href="{{ path('vdmclass_new') }}"> >>>>>"Ajoute une Galère à Sebastien"<<</a>
-                                 </li>
-                             </ul>
-                        </div>
+
     </div>
     {% block footer %}
         <footer>

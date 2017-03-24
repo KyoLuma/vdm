@@ -1,27 +1,25 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="col-xs-offset-2 col-xs-8 container add_vdm"
-    <div>
-        {{ form_label(form.age) }}
-        {{ form_errors(form.age) }}
-        {{ form_widget(form.age) }}
-    </div>
-    <div>
-        {{ form_label(form.age) }}
-        {{ form_errors(form.age) }}
-        {{ form_widget(form.age) }}
-    </div>
-    <div>
-        {{ form_label(form.age) }}
-        {{ form_errors(form.age) }}
-        {{ form_widget(form.age) }}
+
+    <marquee direction="left" behavior="scroll" scrollamount="6" >Ajoute Une Nouvelle Galère de Sebastien !!.</marquee>
+
+    <div class="container new">
+        {{ form_start(form) }}
+        <div class="form_new">
+            {{ form_widget(form) }}
+        </div>
+
+        <div class="content_edit_submit">
+            <input type="submit" value="Create" />
+            {{ form_end(form) }}
+        </div>
+
+
+        <div class="return_index">
+            <a href="{{ path('vdmclass_index') }}">Retour à la Page d'Accueil</a>
+        </div>
+
+
     </div>
 {% endblock %}
-
-
-<div>
-    {{ form_label(form.age) }}
-    {{ form_errors(form.age) }}
-    {{ form_widget(form.age) }}
-</div>

@@ -1,40 +1,44 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Vdmclass</h1>
+    <h1></h1>
+    <div class="container show">
+        <div class="col-xs-offset-1 col-xs-1 id_show">N°
+            {{ vdmClass.id }}
+        </div>
 
-    <table>
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ vdmClass.id }}</td>
-            </tr>
-            <tr>
-                <th>Content</th>
-                <td>{{ vdmClass.content }}</td>
-            </tr>
-            <tr>
-                <th>Datepost</th>
-                <td>{% if vdmClass.datePost %}{{ vdmClass.datePost|date('Y-m-d') }}{% endif %}</td>
-            </tr>
-            <tr>
-                <th>Category</th>
-                <td>{{ vdmClass.category }}</td>
-            </tr>
-        </tbody>
-    </table>
+            <div class="content_vdm">
+                <p>Votre Vdm :</p>
+                {{ vdmClass.content }}
+            </div>
 
-    <ul>
-        <li>
-            <a href="{{ path('vdmclass_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('vdmclass_edit', { 'id': vdmClass.id }) }}">Edit</a>
-        </li>
-        <li>
+        <div class="col-xs-2 date_show">
+               <p> Date :
+                {% if vdmClass.datePost %}{{ vdmClass.datePost|date('Y-m-d') }}{% endif %}
+               </p>
+        </div>
+
+            <div class="col-xs-2 cat_show">
+            <p>Catégorie :
+                {{ vdmClass.category }}
+            </p>
+            </div>
+
+
+
+        <div class="col-xs-3 btn_return">
+            <a href="{{ path('vdmclass_index') }}">Retour à la page d'Acceuil</a>
+        </div>
+
+            <div class="col-xs-2 edit">
+            <a href="{{ path('vdmclass_edit', { 'id': vdmClass.id }) }}">Edition</a>
+            </div>
+
+                <div class="col-xs-2 delete">
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
+                <input type="submit" value="Supprimer">
             {{ form_end(delete_form) }}
-        </li>
-    </ul>
+                </div>
+
+    </div>
 {% endblock %}

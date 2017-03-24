@@ -14,7 +14,7 @@ h1{
 }
 body{
     background-image: url("http://image.noelshack.com/fichiers/2017/12/1490319724-fond1.jpg");
-    mbackground-size: cover;
+    background-size: cover;
     background-attachment: fixed;
     margin: 0;
 }

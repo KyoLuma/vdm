@@ -1,0 +1,124 @@
+
+.div{
+    color:white;
+    font-size: medium;
+}
+
+.content{
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    margin-top: 40px;
+    height:200px;
+
+}
+ul{
+    list-style: none;
+}
+.btn a{
+    color: white;
+    font-style: bold;
+}
+.content_btn{
+    padding:0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+.btn{
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    border:2px solid black;
+    width: 50px;
+    height: 50px;
+    padding-left:0;
+    padding-right:0;
+    padding-top:10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text{
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 90%;
+    height: 150px;
+    border:2px solid black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8)
+
+
+}
+.date{
+    padding-top: 5px;
+
+}
+.cat{
+    padding-top: 5px;
+
+}
+/************************************/
+                /* PAGE NEW */
+/************************************/
+.form{
+    width: 300px;
+}
+.submit{
+    width: 300px;
+}
+/************************************/
+            /*PAGE SHOW*/
+/************************************/
+.show{
+    margin-top: 150px;
+}
+
+.show .content_vdm{
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding:20px;
+    height:400px;
+    font-size: 1.3em;
+    font-style: italic;
+
+}
+.id_show{
+    margin-left: 0;
+    margin-top:-10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    font-size: large;
+
+}
+.date_show, .cat_show, .btn_return, .edit, .delete{
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    color: white;
+    height:45px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.edit a{
+    color: white;
+    font-style: bold;
+}
+.btn_return a{
+    color: white;
+    font-style: bold;
+}
+a:hover{
+    background-color: darkorange;
+
+}
+.delete input{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 8px;
+}

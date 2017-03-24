@@ -1,16 +1,27 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Vdmclass creation</h1>
-
-    {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
-    {{ form_end(form) }}
-
-    <ul>
-        <li>
-            <a href="{{ path('vdmclass_index') }}">Back to the list</a>
-        </li>
-    </ul>
+    <div class="col-xs-offset-2 col-xs-8 container add_vdm"
+    <div>
+        {{ form_label(form.age) }}
+        {{ form_errors(form.age) }}
+        {{ form_widget(form.age) }}
+    </div>
+    <div>
+        {{ form_label(form.age) }}
+        {{ form_errors(form.age) }}
+        {{ form_widget(form.age) }}
+    </div>
+    <div>
+        {{ form_label(form.age) }}
+        {{ form_errors(form.age) }}
+        {{ form_widget(form.age) }}
+    </div>
 {% endblock %}
+
+
+<div>
+    {{ form_label(form.age) }}
+    {{ form_errors(form.age) }}
+    {{ form_widget(form.age) }}
+</div>

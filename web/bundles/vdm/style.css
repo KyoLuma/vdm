@@ -59,14 +59,36 @@ ul{
     padding-top: 5px;
 
 }
+.add_vdm{
+
+}
 /************************************/
-                /* PAGE NEW */
+                /* PAGE EDIT */
 /************************************/
+
 .form{
     width: 300px;
 }
 .submit{
     width: 300px;
+}
+.edit2 {
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+
+    height: 500px;
+    text-align: center;
+}
+.title_edit, .content_edit2, .content_edit_submit, .content_edit_3, .return_index, .content_delete {
+   margin: 50px;  border-radius: 8px;
+}
+.content_edit_submit input{
+    border-radius:8px;
+}
+.content_delete input{
+    border-radius:8px;
 }
 /************************************/
             /*PAGE SHOW*/
@@ -121,4 +143,33 @@ a:hover{
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
     border-radius: 8px;
+}
+/************************************/
+            /*PAGE NEW */
+/************************************/
+marquee {
+    margin-top:150px ;
+
+    border: 5px solid #99de68;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    margin-left: 9%;
+    color: #99de68;
+    height: 60px;
+    font-family: Josefin Sans;
+    font-size: 24pt;
+    font-style: italic;
+}.new{
+     margin-top: 40px;
+     background-color: rgba(0, 0, 0, 0.4);
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+     border-radius: 8px;
+
+     height: 400px;
+     text-align: center;
+ }
+.form_new{
+    margin-top: 50px;
+
 }

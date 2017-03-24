@@ -1,21 +1,38 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Edition</h1>
+    <div class="container edit2">
+            <div class="title_edit">
+                <h1>Edition</h1>
+            </div>
 
-    {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
-    {{ form_end(edit_form) }}
+            <div class="content_edit">
+                {{ form_start(edit_form) }}
+            </div>
 
-    <ul>
-        <li>
-            <a href="{{ path('vdmclass_index') }}">Retour à l'acceuil</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
+            <div class="content_edit_2">
+                {{ form_widget(edit_form) }}
+            </div>
+
+            <div class="content_edit_submit">
+                <input type="submit" value="Edit" />
+            </div>
+
+            <div class="content_edit_3">
+                {{ form_end(edit_form) }}
+            </div>
+
+            <div class="content_delete">
+                {{ form_start(delete_form) }}
+
                 <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+                {{ form_end(delete_form) }}
+            </div>
+
+            <div class="return_index">
+                <a href="{{ path('vdmclass_index') }}">Retour à l'acceuil</a>
+            </div>
+
+
+    </div>
 {% endblock %}
